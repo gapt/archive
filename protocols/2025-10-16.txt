@@ -1,0 +1,32 @@
+ ***********************
+* GAPT Meeting Protocol *
+ ***********************
+
+Date: Oct. 16, 2025
+People: Fabian Achammer, Stefan Hetzl, Bernhard Öllerer, Martin Riener
+Protocol by: Stefan
+
+* scala 2 to scala 3 transition is completed
+
+* TPTP TFF Parser
+  Parsing is completed for monomorphic many-sorted types, proof reconstruction
+  does not yet work (problem: FOLClause,... is one-sorted FOL)
+
+* RingInv Project
+  Short presentation of Bernhard Öllerer's bachelor project (see
+  examples/ringinv)
+
+* Feedback on / Wishlist for gaptic language:
+  - sorry tactic (to avoid complaints of the system)
+  - debug tactic (that only displays current goal)
+  - automation for quantifier-free FOL with equality, e.g., for goals such as
+    s=t -> t=s.
+  - .forget should work for equality tactics eql and eqr (it should drop the
+    equation)
+
+* Proof checking competition
+  We plan to submit gapt to the TPTP proof checking competition. Central open
+  problem: verification of clause form transformation (including
+  Skolemisation). Approach: Do it ourselves, match our result against prover.
+  Martin, Stefan and Fabian will work on that.
+
